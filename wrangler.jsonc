@@ -1,0 +1,11 @@
+{
+  // Queen of Beauty (Tilburg) — statische site op Cloudflare Workers (assets-only)
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "queen-of-beauty-tilburg",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}

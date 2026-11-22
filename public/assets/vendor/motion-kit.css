@@ -1,0 +1,9 @@
+/* ITty motion-kit — базовые стили */
+.mk-cursor{position:fixed;left:0;top:0;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:currentColor;mix-blend-mode:difference;pointer-events:none;z-index:9999}
+.mk-curtain{position:fixed;inset:0;background:var(--ink,#111);z-index:9998;pointer-events:none}
+[data-horizontal]{overflow:hidden}[data-horizontal] .track{display:flex;gap:4vw;width:max-content;padding:0 6vw}
+[data-marquee]{display:flex;white-space:nowrap;width:max-content}
+[data-clip]{overflow:hidden}
+canvas[data-three]{width:100%;height:100%;display:block}
+.mk-rm .mk-curtain{display:none}
+@media (hover:none){.mk-cursor{display:none}}
